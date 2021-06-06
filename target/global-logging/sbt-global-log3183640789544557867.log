@@ -1,0 +1,89 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.3 (Amazon.com Inc. Java 1.8.0_282)
+[debug]       Load.loadUnit: plugins took 96.732254ms
+[debug]       Load.loadUnit: defsScala took 0.30875ms
+[debug] [Loading] Scanning directory /home/knoldus/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/knoldus/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 28.521047 ms
+[debug]           Load.resolveProject(global-plugins) took 176.28346ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/knoldus/.sbt/1.0/plugins, plugins: List(<none>))) took 239.627849ms
+[debug] [Loading] Done in /home/knoldus/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 266.890254ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.421526ms
+[debug]     Load.loadUnit(file:/home/knoldus/.sbt/1.0/plugins/, ...) took 373.545445ms
+[debug]   Load.apply: load took 552.792225ms
+[debug]   Load.apply: resolveProjects took 8.686297ms
+[debug]   Load.apply: finalTransforms took 74.670226ms
+[debug]   Load.apply: config.delegates took 8.343686ms
+[debug]   Load.apply: Def.make(settings)... took 362.063402ms
+[debug]   Load.apply: structureIndex took 100.401777ms
+[debug]   Load.apply: mkStreams took 1.469138ms
+[info] loading global plugins from /home/knoldus/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 2301.175684ms
+[debug]           Load.loadUnit: plugins took 11.769008ms
+[debug]           Load.loadUnit: defsScala took 0.003145ms
+[debug] [Loading] Scanning directory /home/knoldus/IdeaProjects/Future_call_assignment/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/knoldus/IdeaProjects/Future_call_assignment/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.681901 ms
+[debug]               Load.resolveProject(future_call_assignment-build) took 0.989843ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id future_call_assignment-build, base: /home/knoldus/IdeaProjects/Future_call_assignment/project, plugins: List(<none>))) took 3.136921ms
+[debug] [Loading] Done in /home/knoldus/IdeaProjects/Future_call_assignment/project, returning: (future_call_assignment-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 4.580984ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.00989ms
+[debug]         Load.loadUnit(file:/home/knoldus/IdeaProjects/Future_call_assignment/project/, ...) took 16.856175ms
+[debug]       Load.apply: load took 17.927663ms
+[debug]       Load.apply: resolveProjects took 0.120567ms
+[debug]       Load.apply: finalTransforms took 11.21382ms
+[debug]       Load.apply: config.delegates took 0.419831ms
+[debug]       Load.apply: Def.make(settings)... took 84.167507ms
+[debug]       Load.apply: structureIndex took 24.063783ms
+[debug]       Load.apply: mkStreams took 0.002351ms
+[info] loading project definition from /home/knoldus/IdeaProjects/Future_call_assignment/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 248.873819ms
+[debug]     Load.loadUnit: defsScala took 0.003798ms
+[debug] [Loading] Scanning directory /home/knoldus/IdeaProjects/Future_call_assignment
+[debug]       Load.loadUnit: mkEval took 6.673566ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/knoldus/IdeaProjects/Future_call_assignment, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.282219 ms
+[info] loading settings for project future_call_assignment from build.sbt ...
+[debug]         Load.resolveProject(future_call_assignment) took 3.681585ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id future_call_assignment, base: /home/knoldus/IdeaProjects/Future_call_assignment, plugins: List(<none>))) took 6.747508ms
+[debug] [Loading] Done in /home/knoldus/IdeaProjects/Future_call_assignment, returning: (future_call_assignment)
+[debug]     Load.loadUnit: loadedProjectsRaw took 123.937698ms
+[debug]     Load.loadUnit: cleanEvalClasses took 5.367706ms
+[debug]   Load.loadUnit(file:/home/knoldus/IdeaProjects/Future_call_assignment/, ...) took 378.87871ms
+[debug] Load.apply: load took 380.228168ms
+[debug] Load.apply: resolveProjects took 0.135031ms
+[debug] Load.apply: finalTransforms took 9.462456ms
+[debug] Load.apply: config.delegates took 0.410947ms
+[debug] Load.apply: Def.make(settings)... took 110.367617ms
+[debug] Load.apply: structureIndex took 21.903648ms
+[debug] Load.apply: mkStreams took 0.003405ms
+[info] set current project to Future_call_assignment (in build file:/home/knoldus/IdeaProjects/Future_call_assignment/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/knoldus/.sbt/1.0/server/5cf51b6633378ffb51ee/sock
+[info] started sbt server
