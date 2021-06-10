@@ -3,7 +3,6 @@ package org.knoldus.service
 import org.knoldus.model.{User, UserType}
 import org.knoldus.repository.dao.Dao
 
-import java.util.UUID
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 

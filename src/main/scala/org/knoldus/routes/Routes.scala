@@ -13,9 +13,9 @@ import org.knoldus.service.UserService
 
 import scala.util.{Failure, Success}
 
-class Routes extends UserJsonProtocol with SprayJsonSupport {
+class Routes(userService: UserService) extends UserJsonProtocol with SprayJsonSupport {
 
-  val userService = new UserService(new UserDatabase)
+  //val userService = new UserService(new UserDatabase)
 
   val userManagementRouteSkeleton: Route =
     pathPrefix("api" / "user") {
@@ -32,13 +32,22 @@ class Routes extends UserJsonProtocol with SprayJsonSupport {
       post {
         path("create"){
           entity(implicitly[FromRequestUnmarshaller[User]]) { user =>
-            val newUser = User(Some(java.util.UUID.randomUUID().toString),user.name,user.category)
-            println(newUser)
-            onComplete(userService.createNewUser(newUser)){
-              case Success(value) =>
-                if(value) complete("The user is created successfully")
-                else complete("the user is not created successfully")
-              case Failure(ex)    => complete(InternalServerError, s"An error occurred: ${ex.getMessage}")
+            if(user.id.isEmpty){
+              val newUser = User(Some(java.util.UUID.randomUUID().toString),user.name,user.category)
+              println(newUser)
+              onComplete(userService.createNewUser(newUser)){
+                case Success(value) =>
+                  if(value) complete("The user is created successfully")
+                  else complete("the user is not created successfully")
+                case Failure(ex)    => complete(InternalServerError, s"An error occurred: ${ex.getMessage}")
+              }
+            }else{
+              onComplete(userService.createNewUser(user)){
+                case Success(value) =>
+                  if(value) complete("The user is created successfully")
+                  else complete("the user is not created successfully")
+                case Failure(ex)    => complete(InternalServerError, s"An error occurred: ${ex.getMessage}")
+              }
             }
           }
         }~

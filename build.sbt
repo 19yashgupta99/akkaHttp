@@ -1,4 +1,4 @@
-name := "Future_call_assignment"
+name := "akka_http"
 
 version := "0.1"
 
@@ -14,6 +14,8 @@ libraryDependencies ++= Seq (
   "com.typesafe.slick" %% "slick" % "3.3.3",
   "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3",
   "mysql" % "mysql-connector-java" % "8.0.25",
+  "com.typesafe.akka" %% "akka-testkit" % "2.6.14" % Test,
+  "com.typesafe.akka" %% "akka-http-testkit" % "10.2.4" % Test,
   "org.scalatest" %% "scalatest" % "3.2.3" % Test,
   "org.mockito" % "mockito-core" % "3.6.28" % Test
 )
